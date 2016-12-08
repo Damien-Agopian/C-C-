@@ -16,6 +16,6 @@ char afficher(complex uncomplex){
 	printf("%d + i%d \n",uncomplex.get_reelle,uncomplex.get_imaginaire);
 }
 
-int complex::get_reelle(){
+int get_reelle(){
 	return reelle;
 }
