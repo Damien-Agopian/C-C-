@@ -9,12 +9,12 @@ class complex{
 		int get_reelle;
 		int get_imaginaire;
 		//Setters
-		int set_reelle;
-		int set_imaginaire;
+		int set_reelle();
+		int set_imaginaire();
 		//Constructor
 		complex(); //default constructor
 		complex(int reelle, int imaginaire);
 		//fonction
-		afficher(complex uncomplex);
+		char afficher(complex uncomplex);
 };
 
