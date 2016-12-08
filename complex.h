@@ -13,6 +13,8 @@ class complex{
 		int set_imaginaire;
 		//Constructor
 		complex(); //default constructor
-		comeplex(int reelle, int imaginaire) 
+		complex(int reelle, int imaginaire);
+		//fonction
+		afficher(complex uncomplex);
 };
 

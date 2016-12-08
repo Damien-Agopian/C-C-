@@ -11,3 +11,7 @@ complex::complex(int a, int b){
 	imaginaire = b
 
 }
+
+char afficher(complex uncomplex){
+	printf("%d + i%d \n",reelle,imaginaire);
+}
