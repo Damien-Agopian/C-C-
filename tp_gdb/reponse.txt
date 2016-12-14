@@ -1,0 +1,44 @@
+Exercice 1
+a)
+( wget <URL> telecharge le fichier a l'adresse rentré)
+make
+
+gdb ./main
+break 20 met une pause a la ligne20
+start  run mais étape par étape
+
+ou
+
+b main.cpp:21
+run
+
+renvoie assertion fail
+donc on run avec deux argument
+
+run 2 3
+
+
+p mat1  affiche mat1
+p &mat1 affiche l'adresse de mat1
+p &mat1[0] donne l'addresse du premier élément de mat1 qui est au 	final la meme que celle de mat1 
+p &mat1[0][0] affiche l'adresse du premier élément de la premiere 	ligne de mat1. Et on a encore la meme adresse
+Meme adresse mais des tyes diffrents
+
+b)
+p &mat[0][0]  ......d0
+p &mat[0][1]  ......d4
+p &mat[0][2]  ......d8
+p &mat[1][0]  ......dc
+p &mat[1][1]  ......e0
+p &mat[1][2]
+
+donc la taille d'une case est de 4 octets
+
+c)
+
+(gdb) set math[1][2]=15
+
+&mat1[1]=d0+1*c=dc
+&mat1[1][2] = dc + 2 * 4 = e4
+&mat1[0]= d0 0*c = d0
+math[0][5]= d0+ 5*4 = e4
